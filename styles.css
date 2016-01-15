@@ -1,0 +1,173 @@
+*{
+  box-sizing:border-box;
+}
+
+body{
+  display: flex;
+  display: -webkit-flex;
+  margin:0;
+  padding-top: 5%;
+  flex-wrap:wrap;
+  background: radial-gradient(white,aliceblue);
+}
+nav{
+  background-color: rgba(1, 1, 1, 0.8);
+  color: rgba(1, 1, 1, 0.8);
+  height: 5%;
+  left:0;
+  position:fixed;
+  top:0;
+  width: 100%;
+  display:flex;
+}
+
+nav a{
+  align-items:center;
+  border-right: 1px solid white;
+  color:white;
+  display: -webkit-flex;
+  display: flex;
+  justify-content:center;
+  position: relative;
+  text-decoration: none;
+  width: 8%;
+}
+
+#contact{
+  position:absolute;
+  right:0;
+  height:100%;
+  /*border-left:1px solid white;*/
+  border-right: none;
+}
+
+nav a:hover{
+  background-color: grey;
+}
+
+section{
+  border-top: 2px solid black;
+  border-bottom:2px solid black;
+  display:flex;
+  flex-direction: column;
+  width:100%;
+}
+
+section h1, p{
+  margin-top:0;
+  margin-bottom: 0; 
+  /*border:1px solid black;*/
+}
+
+
+}
+#about h1{
+  /*border: 1px solid black;*/
+  margin-bottom: 0;
+}
+
+h2{
+  font-size: 1em;
+  margin-top:0.25em;
+  /*border:1px solid black;*/
+}
+
+#main{
+  display:flex;
+
+  /*justify-content: space-around;*/
+  /*border: 5px solid black;*/
+}
+
+#text{
+/*  border: 5px solid black;
+*/
+  height:100%;
+  flex:1;
+}
+
+aside {
+  display:flex;
+  flex:1;
+  /*border: 5px solid black;*/
+  align-self: center;
+}
+
+aside img{
+  width:100%;
+  height:100%;
+}
+
+#list{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  /*border:5px solid black;*/
+}
+
+#list p{
+  width:100%;
+  color:blueviolet;
+}
+#catlist{
+  list-style-type:none;
+  border-top:1px solid black;
+  border-right:1px solid black;
+  border-bottom: 1px solid black;
+  flex:3; 
+  padding-left:0;
+  margin-top:0;
+  display:flex;
+  flex-direction: column;
+}
+
+#catlist li{
+  flex-direction: column;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(108,120,117);
+  border:1px solid black;
+  flex:auto;
+}
+
+/*#catlist li:hover{
+  background-color: grey;
+  color:blue;
+}*/
+
+/*#catlist li:active{
+  background-color: grey;
+  color:blue;
+}*/
+
+#listtext{
+  flex:4;
+  display:flex;
+}
+
+#listpic{
+  width:30%;
+  display:flex;
+}
+
+#catpic{
+  height:100%;
+  width:100%;
+  flex:3;
+}
+
+input{
+  display: flex;
+  background-color: rgb(108,120,117);
+  border:1px solid black;
+  align-items: center;
+  justify-content: center;
+  flex:auto;
+  width: 100%;
+  }
+
+input:focus{
+  background-color: white;
+}
